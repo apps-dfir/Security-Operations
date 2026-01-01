@@ -1,0 +1,32 @@
+name: Update Dashboard
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PEAK_BOT_PAT }}
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Generate dashboard
+        run: |
+          cd peak/cti
+          python scripts/generate_dashboard.py
+      
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add peak/cti/dashboard/index.html
+          git diff --staged --quiet || git commit -m "Update dashboard"
+          git push

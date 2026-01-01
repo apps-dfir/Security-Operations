@@ -1,0 +1,13 @@
+beautifulsoup4==4.12.3
+lxml==5.3.0
+lxml[html_clean]
+readability-lxml==0.8.1
+requests==2.32.3
+pillow==11.0.0
+pytesseract==0.3.13
+playwright==1.49.0
+python-dateutil==2.9.0.post0
+python-docx>=1.1.0
+pdfplumber>=0.11.0
+pypdf>=4.0.0
+pdf2image>=1.17.0

@@ -1,0 +1,37 @@
+name: "PEAK CTI Multi-Source Submission"
+description: Submit up to 5 sources for consolidated CTI report
+title: "[Multi-Source] "
+labels: ["peak-cti", "multi-source"]
+body:
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources (up to 5)
+      description: Enter 1-5 URLs or file paths, numbered with format "1. URL"
+      placeholder: |
+        1. https://unit42.paloaltonetworks.com/article1/
+        2. https://example.com/article2/
+        3. inputs/report.pdf
+    validations:
+      required: true
+  
+  - type: input
+    id: analyst
+    attributes:
+      label: Analyst
+      description: Your name or username
+      placeholder: john_doe
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: ocr
+    attributes:
+      label: Enable OCR
+      description: Extract text from images in articles
+      options:
+        - "no"
+        - "yes"
+      default: 0
+    validations:
+      required: true

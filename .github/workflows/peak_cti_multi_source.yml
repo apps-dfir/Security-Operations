@@ -1,0 +1,336 @@
+name: PEAK CTI Multi-Source
+
+on:
+  issues:
+    types: [opened, edited]
+
+concurrency:
+  group: peak-cti-multi-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  process-multi-source:
+    if: contains(github.event.issue.labels.*.name, 'multi-source')
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}/peak/cti
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true  # Download Git LFS files (PDFs in inputs/)
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            tesseract-ocr \
+            poppler-utils
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Write issue fields to files
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+
+          Path("data").mkdir(parents=True, exist_ok=True)
+          Path("data/issue_title.txt").write_text(os.environ.get("ISSUE_TITLE","") or "", encoding="utf-8")
+          Path("data/issue_body.md").write_text(os.environ.get("ISSUE_BODY","") or "", encoding="utf-8")
+          PY
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+
+      - name: Parse multi-source issue
+        id: parse
+        run: |
+          python - <<'PY'
+          import os, json
+          from pathlib import Path
+          from peak_reporter.multi_source_handler import parse_multi_source_input
+
+          # Read issue body
+          issue_body = Path("data/issue_body.md").read_text(encoding="utf-8")
+          
+          # Parse sources
+          sources = parse_multi_source_input(issue_body)
+          
+          # Also parse analyst and OCR
+          import re
+          analyst_match = re.search(r'### Analyst\s*\n\s*(.+)', issue_body)
+          ocr_match = re.search(r'### Enable OCR\s*\n\s*(.+)', issue_body)
+          
+          analyst = analyst_match.group(1).strip() if analyst_match else "Unknown"
+          ocr = ocr_match.group(1).strip().lower() if ocr_match else "no"
+          
+          # Save for workflow
+          outputs = {
+              "analyst": analyst,
+              "enable_ocr": "true" if ocr == "yes" else "false",
+              "sources": sources
+          }
+          
+          Path("data/multi_source_inputs.json").write_text(json.dumps(outputs, indent=2), encoding="utf-8")
+          
+          # Print for debugging
+          print(f"Analyst: {analyst}")
+          print(f"OCR: {ocr}")
+          print(f"Found {len(sources)} sources:")
+          for idx, src in enumerate(sources, 1):
+              print(f"  {idx}. [{src['type']}] {src['value']}")
+          
+          # Set outputs
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"analyst={analyst}\n")
+              f.write(f"enable_ocr={'true' if ocr == 'yes' else 'false'}\n")
+              f.write(f"source_count={len(sources)}\n")
+          PY
+
+      - name: Check for duplicate sources
+        id: check_duplicates
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          import sys
+          from pathlib import Path
+          
+          # Load parsed sources
+          inputs = json.loads(Path("data/multi_source_inputs.json").read_text())
+          sources = inputs.get("sources", [])
+          
+          if not sources:
+              print("No sources to check")
+              sys.exit(0)
+          
+          duplicates = []
+          new_sources = []
+          
+          for src in sources:
+              src_type = src['type']
+              src_value = src['value']
+              
+              print(f"Checking [{src_type}]: {src_value}")
+              
+              if src_type == 'url':
+                  cmd = [
+                      'python', 'scripts/check_source_duplicate.py',
+                      '--url', src_value,
+                      '--issue-number', '${{ github.event.issue.number }}',
+                      '--database', 'data/ioc_database.json',
+                      '--quiet'
+                  ]
+              else:
+                  cmd = [
+                      'python', 'scripts/check_source_duplicate.py',
+                      '--file', src_value,
+                      '--issue-number', '${{ github.event.issue.number }}',
+                      '--database', 'data/ioc_database.json',
+                      '--inputs-dir', 'inputs',
+                      '--quiet'
+                  ]
+              
+              result = subprocess.run(cmd, capture_output=True, text=True)
+              if result.returncode != 0:
+                  duplicates.append(src_value)
+                  print(f"  🔴 DUPLICATE: {src_value}")
+              else:
+                  new_sources.append(src)
+                  print(f"  🟢 NEW: {src_value}")
+          
+          # If ALL sources are duplicates, abort
+          if len(duplicates) == len(sources):
+              print(f"\n❌ ALL {len(sources)} sources are duplicates - aborting workflow")
+              sys.exit(1)
+          
+          # If some duplicates, filter them out and continue with new ones
+          if duplicates:
+              print(f"\n⚠️  Found {len(duplicates)} duplicate(s), continuing with {len(new_sources)} new source(s)")
+              inputs["sources"] = new_sources
+              Path("data/multi_source_inputs.json").write_text(json.dumps(inputs, indent=2))
+          else:
+              print(f"\n✅ All {len(sources)} sources are new")
+          
+          sys.exit(0)
+          PY
+
+      - name: Comment on duplicate abort
+        if: failure() && steps.check_duplicates.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '## ⚠️ All Sources Are Duplicates\n\nAll sources in this submission have already been processed. Check previous reports in the repository.\n\nWorkflow aborted - no new report generated.'
+            });
+            await github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['duplicate']
+            });
+
+      - name: Generate consolidated report
+        id: generate
+        run: |
+          python generate_consolidated_report.py \
+            --sources-json data/multi_source_inputs.json \
+            --analyst "${{ steps.parse.outputs.analyst }}" \
+            --enable-ocr "${{ steps.parse.outputs.enable_ocr }}" \
+            --issue-number "${{ github.event.issue.number }}" \
+            --issue-title "${{ github.event.issue.title }}" \
+            --issue-url "${{ github.event.issue.html_url }}" \
+            --repo-url "https://github.com/${{ github.repository }}"
+
+      - name: Tag overlapping IOCs
+        run: |
+          # Tag IOCs in the consolidated report
+          for report in reports/issue-${{ github.event.issue.number }}*consolidated*.md; do
+            if [ -f "$report" ]; then
+              echo "Tagging IOCs in: $report"
+              python scripts/tag_overlapping_iocs.py \
+                --report "$report" \
+                --database data/ioc_database.json \
+                --in-place 2>/dev/null || echo "⚠️  IOC tagging skipped (database may not exist yet)"
+            fi
+          done
+
+      - name: Correlate IOCs with historical reports
+        run: |
+          # Add prevalence information showing which IOCs were seen in previous reports
+          for report in reports/issue-${{ github.event.issue.number }}*consolidated*.md; do
+            if [ -f "$report" ]; then
+              echo "Correlating IOCs in: $report"
+              python scripts/correlate_iocs.py \
+                --report "$report" \
+                --database data/ioc_database.json \
+                --repo-url "https://github.com/${{ github.repository }}" \
+                --in-place || echo "⚠️  IOC correlation skipped"
+            fi
+          done
+
+      - name: Update IOC Database
+        run: |
+          echo "Updating IOC database..."
+          python scripts/build_ioc_database.py \
+            --reports-dir reports \
+            --output data/ioc_database.json \
+            --pretty || echo "⚠️  Database build skipped"
+
+      - name: Generate Dashboard
+        run: |
+          echo "Generating dashboard..."
+          python scripts/generate_dashboard.py \
+            --reports-dir reports \
+            --database data/ioc_database.json \
+            --output-html dashboard/index.html \
+            --output-stats STATS.md \
+            --repo-url "https://github.com/${{ github.repository }}" || echo "⚠️  Dashboard generation skipped"
+
+      - name: Commit OCR images and dashboard to main
+        run: |
+          cd ${{ github.workspace }}
+          
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add OCR images if they exist
+          if [ -d "peak/cti/data/ocr_images" ] && [ "$(ls -A peak/cti/data/ocr_images 2>/dev/null)" ]; then
+            echo "Adding OCR images..."
+            git add peak/cti/data/ocr_images/
+          fi
+          
+          # Add dashboard files
+          if [ -f "peak/cti/dashboard/index.html" ]; then
+            echo "Adding dashboard..."
+            git add peak/cti/dashboard/
+          fi
+          
+          # Add STATS.md
+          if [ -f "peak/cti/STATS.md" ]; then
+            echo "Adding stats..."
+            git add peak/cti/STATS.md
+          fi
+          
+          # Add updated database
+          if [ -f "peak/cti/data/ioc_database.json" ]; then
+            echo "Adding IOC database..."
+            git add peak/cti/data/ioc_database.json
+          fi
+          
+          # Commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit to main"
+          else
+            git commit -m "Update OCR images, dashboard, and database for issue #${{ github.event.issue.number }}"
+            
+            # Pull latest changes and rebase to handle concurrent pushes
+            git pull --rebase origin main || {
+              echo "⚠️  Rebase failed, attempting merge..."
+              git rebase --abort 2>/dev/null || true
+              git pull origin main --no-rebase
+            }
+            
+            git push origin main
+            echo "✅ Pushed OCR images and dashboard to main"
+          fi
+
+      - name: Create Pull Request for Report
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.PEAK_BOT_PAT }}
+          commit-message: "PEAK CTI consolidated report for issue #${{ github.event.issue.number }}"
+          branch: peak-drafts/issue-${{ github.event.issue.number }}
+          title: "PEAK CTI Consolidated: ${{ github.event.issue.title }}"
+          body: |
+            ## 📊 PEAK CTI Consolidated Report
+            
+            **Source Issue:** #${{ github.event.issue.number }}
+            **Analyst:** ${{ steps.parse.outputs.analyst }}
+            **Sources Processed:** ${{ steps.parse.outputs.source_count }}
+            **OCR Enabled:** ${{ steps.parse.outputs.enable_ocr }}
+            
+            ### Report Features
+            - ✅ Single consolidated report from all sources
+            - ✅ IOCs deduplicated across sources
+            - ✅ Each IOC linked to its source article
+            - ✅ MITRE ATT&CK techniques with source attribution
+            - ✅ Per-source details in collapsible section
+            - ✅ OCR extracted images with linked results
+            
+            ### Assets Updated on Main
+            - 📊 [Dashboard](../blob/main/peak/cti/dashboard/index.html)
+            - 📈 [Stats](../blob/main/peak/cti/STATS.md)
+            - 🖼️ [OCR Images](../tree/main/peak/cti/data/ocr_images)
+            
+            ### Review Checklist
+            - [ ] Verify IOCs are accurate
+            - [ ] Check MITRE ATT&CK mappings
+            - [ ] Review OCR extracted content
+            - [ ] Fill in Executive Summary
+            
+            **Auto-generated by PEAK CTI v3.0**
+          labels: peak-cti-report,multi-source,consolidated
+          delete-branch: true

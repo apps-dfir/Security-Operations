@@ -1,0 +1,18 @@
+{
+  "analyst": "Apps",
+  "enable_ocr": "true",
+  "sources": [
+    {
+      "type": "file",
+      "value": "inputs/CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf"
+    },
+    {
+      "type": "file",
+      "value": "inputs/aa25-141b-threat-actors-deploy-lummac2-malware-to-exfiltrate-sensitive-data-from-organizations.pdf"
+    },
+    {
+      "type": "file",
+      "value": "inputs/aa25-163a-ransomware-simplehelp-rmm-compromise.pdf"
+    }
+  ]
+}
