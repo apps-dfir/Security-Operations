@@ -246,7 +246,7 @@ View locally or enable GitHub Pages to host.
 
 ### Methodology and Inspiration
 
-- **THIR Collective** - Threat hunting methodology and structured analysis frameworks
+- **THOR Collective** - Threat hunting methodology and structured analysis frameworks
 - **Sydney Marrone and Team** - Inspiration for threat hunting documentation patterns
 
 ### Frameworks and Data Sources
