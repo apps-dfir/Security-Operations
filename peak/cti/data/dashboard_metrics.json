@@ -1,36 +1,91 @@
 {
-  "generated": "2026-01-01T02:21:52.275325",
-  "total_reports": 1,
-  "total_iocs": 197,
-  "total_sources": 5,
+  "generated": "2026-01-01T02:30:15.050859",
+  "total_reports": 2,
+  "total_iocs": 544,
+  "total_sources": 8,
   "reports_by_month": {
-    "2026-01": 1
+    "2026-01": 2
   },
   "reports_by_week": {
-    "2026-W01": 1
+    "2026-W01": 2
   },
   "iocs_by_type": {
-    "ipv4": 19,
-    "domains": 95,
-    "urls": 18,
-    "sha256": 54,
-    "sha1": 0,
-    "md5": 3,
-    "cves": 3
+    "ipv4": 84,
+    "domains": 334,
+    "urls": 38,
+    "sha256": 63,
+    "sha1": 3,
+    "md5": 6,
+    "cves": 9
   },
   "ioc_prevalence": {
-    "common_iocs": 0,
+    "common_iocs": 4,
     "high_prevalence": 0,
-    "top_common": []
+    "top_common": [
+      {
+        "ioc_type": "domains",
+        "ioc_value": "ntdsutil.exe",
+        "count": 2,
+        "reports": [
+          "Unit42 Blogs - URL Test Run",
+          "CISA PDF Reports - Test Run"
+        ]
+      },
+      {
+        "ioc_type": "domains",
+        "ioc_value": "powershell.exe",
+        "count": 2,
+        "reports": [
+          "Unit42 Blogs - URL Test Run",
+          "CISA PDF Reports - Test Run"
+        ]
+      },
+      {
+        "ioc_type": "domains",
+        "ioc_value": "rundll32.exe",
+        "count": 2,
+        "reports": [
+          "Unit42 Blogs - URL Test Run",
+          "CISA PDF Reports - Test Run"
+        ]
+      },
+      {
+        "ioc_type": "domains",
+        "ioc_value": "system.net",
+        "count": 2,
+        "reports": [
+          "Unit42 Blogs - URL Test Run",
+          "CISA PDF Reports - Test Run"
+        ]
+      }
+    ]
   },
-  "mitre_tactics": {},
+  "mitre_tactics": {
+    "Discovery": 3,
+    "Collection": 5,
+    "Execution": 4,
+    "Lateral Movement": 1,
+    "Command and Control": 2,
+    "Initial Access": 1,
+    "Exfiltration": 2
+  },
   "mitre_techniques": {},
   "top_techniques": [],
   "threat_actors": {
-    "UNC": 1,
-    "TA": 1
+    "APT28": 1,
+    "TA": 2,
+    "Fancy Bear": 1,
+    "GRU": 1,
+    "LummaC2": 1,
+    "UNC": 1
   },
   "recent_reports": [
+    {
+      "filename": "issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+      "title": "CISA PDF Reports - Test Run",
+      "issue": 3,
+      "date": "2026-01-01"
+    },
     {
       "filename": "issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
       "title": "Unit42 Blogs - URL Test Run",

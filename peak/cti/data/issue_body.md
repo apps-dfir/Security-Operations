@@ -1,10 +1,8 @@
 ### Sources (up to 5)
 
-1. https://unit42.paloaltonetworks.com/ransomhouse-encryption-upgrade/
-2. https://securelist.com/honeymyte-kernel-mode-rootkit/118590/
-3. https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/
-4. https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/
-5. https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust/
+1. inputs/CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf
+2. inputs/aa25-141b-threat-actors-deploy-lummac2-malware-to-exfiltrate-sensitive-data-from-organizations.pdf
+3. inputs/aa25-163a-ransomware-simplehelp-rmm-compromise.pdf
 
 ### Analyst
 
