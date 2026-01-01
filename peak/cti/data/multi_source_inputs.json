@@ -1,0 +1,26 @@
+{
+  "analyst": "Apramey 'Apps' Shurpali",
+  "enable_ocr": "true",
+  "sources": [
+    {
+      "type": "url",
+      "value": "https://unit42.paloaltonetworks.com/ransomhouse-encryption-upgrade/"
+    },
+    {
+      "type": "url",
+      "value": "https://securelist.com/honeymyte-kernel-mode-rootkit/118590/"
+    },
+    {
+      "type": "url",
+      "value": "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/"
+    },
+    {
+      "type": "url",
+      "value": "https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/"
+    },
+    {
+      "type": "url",
+      "value": "https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust/"
+    }
+  ]
+}
