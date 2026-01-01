@@ -4,7 +4,7 @@ This folder contains the interactive PEAK CTI analytics dashboard, served via Gi
 
 ## Viewing the Dashboard
 
-**Live:** [https://apps-dfir.github.io/Security-Operations/](https://apps-dfir.github.io/Security-Operations/)
+**Live:** [https://dashboard.apps-ir.com/](https://dashboard.apps-ir.com/)
 
 ## Features
 
