@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEAK CTI Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --border-color: #30363d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-purple: #a371f7;
+            --accent-orange: #d29922;
+            --accent-red: #f85149;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+        }
+        
+        .stat-card:nth-child(2) .stat-value { color: var(--accent-green); }
+        .stat-card:nth-child(3) .stat-value { color: var(--accent-purple); }
+        .stat-card:nth-child(4) .stat-value { color: var(--accent-orange); }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .chart-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .chart-card h3 {
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            font-size: 1.1em;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        th {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 1px;
+        }
+        
+        td a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        td a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 PEAK CTI Dashboard</h1>
+            <p>Cyber Threat Intelligence Analytics</p>
+            <p style="color: var(--text-secondary); font-size: 0.9em;">Last updated: 2026-01-01T02:30:15</p>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Total Reports</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">544</div>
+                <div class="stat-label">IOCs Tracked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">0</div>
+                <div class="stat-label">MITRE Techniques</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">6</div>
+                <div class="stat-label">Threat Actors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color: var(--accent-red);">4</div>
+                <div class="stat-label">Common IOCs</div>
+            </div>
+        </div>
+        
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>📈 Reports Over Time</h3>
+                <div id="timeline-chart"></div>
+            </div>
+            
+            <div class="chart-card">
+                <h3>🎯 IOC Distribution</h3>
+                <div id="ioc-chart"></div>
+            </div>
+            
+            <div class="chart-card">
+                <h3>⚔️ Top MITRE Techniques</h3>
+                <div id="technique-chart"></div>
+            </div>
+            
+            <div class="chart-card">
+                <h3>🏴‍☠️ Threat Actors</h3>
+                <div id="actor-chart"></div>
+            </div>
+            
+            <div class="chart-card full-width">
+                <h3>🔄 Common IOCs Across Reports</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">IOCs seen in multiple reports - potential threat actor overlap or shared infrastructure</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IOC</th>
+                            <th>Type</th>
+                            <th>Seen In</th>
+                            <th>Reports</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><code>ntdsutil.exe</code></td>
+            <td>DOMAINS</td>
+            <td>2 reports</td>
+            <td>Unit42 Blogs - URL Test Run, CISA PDF Reports - Test Run</td>
+        </tr>
+        <tr>
+            <td><code>powershell.exe</code></td>
+            <td>DOMAINS</td>
+            <td>2 reports</td>
+            <td>Unit42 Blogs - URL Test Run, CISA PDF Reports - Test Run</td>
+        </tr>
+        <tr>
+            <td><code>rundll32.exe</code></td>
+            <td>DOMAINS</td>
+            <td>2 reports</td>
+            <td>Unit42 Blogs - URL Test Run, CISA PDF Reports - Test Run</td>
+        </tr>
+        <tr>
+            <td><code>system.net</code></td>
+            <td>DOMAINS</td>
+            <td>2 reports</td>
+            <td>Unit42 Blogs - URL Test Run, CISA PDF Reports - Test Run</td>
+        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="chart-card full-width">
+                <h3>📋 Recent Reports</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Issue</th>
+                            <th>Title</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><a href="https://github.com/apps-dfir/Security-Operations/issues/3">#3</a></td>
+            <td>CISA PDF Reports - Test Run</td>
+            <td>2026-01-01</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/apps-dfir/Security-Operations/issues/1">#1</a></td>
+            <td>Unit42 Blogs - URL Test Run</td>
+            <td>2026-01-01</td>
+        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Generated by PEAK CTI v3.0 | Powered by Plotly</p>
+        </footer>
+    </div>
+    
+    <script>
+        const plotlyConfig = {
+            responsive: true,
+            displayModeBar: false
+        };
+        
+        const plotlyLayout = {
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            font: { color: '#c9d1d9', family: '-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial' },
+            margin: { l: 50, r: 30, t: 30, b: 50 },
+            xaxis: { gridcolor: '#30363d', linecolor: '#30363d' },
+            yaxis: { gridcolor: '#30363d', linecolor: '#30363d' }
+        };
+        
+        // Timeline Chart
+        Plotly.newPlot('timeline-chart', [{
+            x: ["2026-01"],
+            y: [2],
+            type: 'scatter',
+            mode: 'lines+markers',
+            fill: 'tozeroy',
+            line: { color: '#58a6ff', width: 3 },
+            marker: { size: 8, color: '#58a6ff' },
+            fillcolor: 'rgba(88, 166, 255, 0.1)'
+        }], {
+            ...plotlyLayout,
+            xaxis: { ...plotlyLayout.xaxis, title: 'Month' },
+            yaxis: { ...plotlyLayout.yaxis, title: 'Reports' }
+        }, plotlyConfig);
+        
+        // IOC Distribution Chart
+        Plotly.newPlot('ioc-chart', [{
+            labels: ["ipv4", "domains", "urls", "sha256", "sha1", "md5", "cves"],
+            values: [84, 334, 38, 63, 3, 6, 9],
+            type: 'pie',
+            hole: 0.4,
+            marker: {
+                colors: ['#58a6ff', '#3fb950', '#a371f7', '#d29922', '#f85149', '#8b949e', '#79c0ff']
+            },
+            textinfo: 'label+percent',
+            textfont: { color: '#c9d1d9' }
+        }], {
+            ...plotlyLayout,
+            showlegend: false
+        }, plotlyConfig);
+        
+        // MITRE Techniques Chart
+        Plotly.newPlot('technique-chart', [{
+            x: [],
+            y: [],
+            type: 'bar',
+            orientation: 'h',
+            marker: {
+                color: [],
+                colorscale: [[0, '#3fb950'], [0.5, '#d29922'], [1, '#f85149']]
+            }
+        }], {
+            ...plotlyLayout,
+            yaxis: { ...plotlyLayout.yaxis, autorange: 'reversed' },
+            xaxis: { ...plotlyLayout.xaxis, title: 'Occurrences' }
+        }, plotlyConfig);
+        
+        // Threat Actors Chart
+        Plotly.newPlot('actor-chart', [{
+            x: ["APT28", "TA", "Fancy Bear", "GRU", "LummaC2", "UNC"],
+            y: [1, 2, 1, 1, 1, 1],
+            type: 'bar',
+            marker: {
+                color: '#a371f7',
+                line: { color: '#8b5cf6', width: 1 }
+            }
+        }], {
+            ...plotlyLayout,
+            xaxis: { ...plotlyLayout.xaxis, tickangle: -45 },
+            yaxis: { ...plotlyLayout.yaxis, title: 'Mentions' }
+        }, plotlyConfig);
+    </script>
+</body>
+</html>
