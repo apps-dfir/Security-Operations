@@ -6,10 +6,6 @@ Interactive dashboard for visualizing PEAK CTI metrics.
 
 **Local:** Open `index.html` in a browser
 
-**GitHub Pages:**
-1. Go to repository Settings → Pages
-2. Set source to main branch, folder `/peak/cti/dashboard`
-3. Access at `https://{org}.github.io/{repo}/peak/cti/dashboard/`
 
 ## Features
 
