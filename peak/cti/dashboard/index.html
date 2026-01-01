@@ -166,16 +166,16 @@
         <header>
             <h1>🎯 PEAK CTI Dashboard</h1>
             <p>Cyber Threat Intelligence Analytics</p>
-            <p style="color: var(--text-secondary); font-size: 0.9em;">Last updated: 2026-01-01T02:21:52</p>
+            <p style="color: var(--text-secondary); font-size: 0.9em;">Last updated: 2026-01-01T02:30:15</p>
         </header>
         
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-value">1</div>
+                <div class="stat-value">2</div>
                 <div class="stat-label">Total Reports</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">197</div>
+                <div class="stat-value">544</div>
                 <div class="stat-label">IOCs Tracked</div>
             </div>
             <div class="stat-card">
@@ -183,11 +183,11 @@
                 <div class="stat-label">MITRE Techniques</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">2</div>
+                <div class="stat-value">6</div>
                 <div class="stat-label">Threat Actors</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" style="color: var(--accent-red);">0</div>
+                <div class="stat-value" style="color: var(--accent-red);">4</div>
                 <div class="stat-label">Common IOCs</div>
             </div>
         </div>
@@ -226,7 +226,31 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td colspan="4" style="text-align:center;color:var(--text-secondary)">No common IOCs yet</td></tr>
+                        
+        <tr>
+            <td><code>ntdsutil.exe</code></td>
+            <td>DOMAINS</td>
+            <td>2 reports</td>
+            <td>Unit42 Blogs - URL Test Run, CISA PDF Reports - Test Run</td>
+        </tr>
+        <tr>
+            <td><code>powershell.exe</code></td>
+            <td>DOMAINS</td>
+            <td>2 reports</td>
+            <td>Unit42 Blogs - URL Test Run, CISA PDF Reports - Test Run</td>
+        </tr>
+        <tr>
+            <td><code>rundll32.exe</code></td>
+            <td>DOMAINS</td>
+            <td>2 reports</td>
+            <td>Unit42 Blogs - URL Test Run, CISA PDF Reports - Test Run</td>
+        </tr>
+        <tr>
+            <td><code>system.net</code></td>
+            <td>DOMAINS</td>
+            <td>2 reports</td>
+            <td>Unit42 Blogs - URL Test Run, CISA PDF Reports - Test Run</td>
+        </tr>
                     </tbody>
                 </table>
             </div>
@@ -243,6 +267,11 @@
                     </thead>
                     <tbody>
                         
+        <tr>
+            <td><a href="https://github.com/apps-dfir/Security-Operations/issues/3">#3</a></td>
+            <td>CISA PDF Reports - Test Run</td>
+            <td>2026-01-01</td>
+        </tr>
         <tr>
             <td><a href="https://github.com/apps-dfir/Security-Operations/issues/1">#1</a></td>
             <td>Unit42 Blogs - URL Test Run</td>
@@ -276,7 +305,7 @@
         // Timeline Chart
         Plotly.newPlot('timeline-chart', [{
             x: ["2026-01"],
-            y: [1],
+            y: [2],
             type: 'scatter',
             mode: 'lines+markers',
             fill: 'tozeroy',
@@ -292,7 +321,7 @@
         // IOC Distribution Chart
         Plotly.newPlot('ioc-chart', [{
             labels: ["ipv4", "domains", "urls", "sha256", "sha1", "md5", "cves"],
-            values: [19, 95, 18, 54, 0, 3, 3],
+            values: [84, 334, 38, 63, 3, 6, 9],
             type: 'pie',
             hole: 0.4,
             marker: {
@@ -323,8 +352,8 @@
         
         // Threat Actors Chart
         Plotly.newPlot('actor-chart', [{
-            x: ["UNC", "TA"],
-            y: [1, 1],
+            x: ["APT28", "TA", "Fancy Bear", "GRU", "LummaC2", "UNC"],
+            y: [1, 2, 1, 1, 1, 1],
             type: 'bar',
             marker: {
                 color: '#a371f7',

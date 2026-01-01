@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated": "2026-01-01T02:22:24.952775",
-    "total_reports": 1,
-    "total_iocs": 197
+    "generated": "2026-01-01T02:30:14.991137",
+    "total_reports": 2,
+    "total_iocs": 544
   },
   "ioc_index": {
     "cves:cve-2019-11580": [
@@ -528,6 +528,11 @@
         "report": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
         "issue_number": 1,
         "title": "Unit42 Blogs - URL Test Run"
+      },
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
       }
     ],
     "domains:ntoskrnl.exe": [
@@ -556,6 +561,11 @@
         "report": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
         "issue_number": 1,
         "title": "Unit42 Blogs - URL Test Run"
+      },
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
       }
     ],
     "domains:projectconfiguration.sys": [
@@ -647,6 +657,11 @@
         "report": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
         "issue_number": 1,
         "title": "Unit42 Blogs - URL Test Run"
+      },
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
       }
     ],
     "domains:segawon.id": [
@@ -724,6 +739,11 @@
         "report": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
         "issue_number": 1,
         "title": "Unit42 Blogs - URL Test Run"
+      },
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
       }
     ],
     "domains:systeminfo.exe": [
@@ -1383,6 +1403,2435 @@
         "issue_number": 1,
         "title": "Unit42 Blogs - URL Test Run"
       }
+    ],
+    "domains:000.pe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:1cooldns.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:21.pdf": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:22.pdf": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:42web.io": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:4cloud.click": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:4ginfosource.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:aaa.exe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:accesscan.org": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:address.ipaddresstostring": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:adexplorer.exe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:advennture.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:aka.ms": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:alfathdoor.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ashoke.kumar": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:authorizev.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bbb.exe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bfv.bund": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bhpcapital.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bis.cz": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:blast-hubs.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:blastikcn.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:blogs.microsoft": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bnd.bund": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bplanka.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bsi.bund": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bugildbett.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:bumbleshrimp.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:calc.war": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:calmingtefxtures.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:camdvr.org": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:casacam.net": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:castmaxw.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cert.gov": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cert.incident": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cert.ssi": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:changeaie.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cisa.gov": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:citydisco.bet": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:citywand.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cjlaspcorne.icu": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:clarmodq.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:clear.pdf": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:climatologfy.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:coastalareabank.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:collapimga.fun": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:computeryrati.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:contemteny.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cosmicgold469.co": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cryptography.dataprotectionscope": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cryptography.protectdata": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cta-ru-2024-0530.pdf": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cyber.gc": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cyber.gov": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cyber.int": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cyber.nsa": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:cyber.threats": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:dc3.dcise": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:dc3.information": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ddnsfree.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ddnsgeek.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ddnsguru.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:decreaserid.world": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:dilemmadu.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:drawzhotdog.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:dsfljsdfjewf.info": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:dynuddns.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:dynuddns.net": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:earthsymphzony.today": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:easyfwdr.digital": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:edge.exe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:email.cz": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:equatorf.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:esccapewz.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:fanlumpactiras.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:faulteyotk.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:featureccus.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ferromny.digital": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:forbidstow.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:foresctwhispers.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:fragnantbui.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:franch1.lanka": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:freckletropsao.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:free.nf": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:freeddns.org": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:frge.io": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:friendseforever.help": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:furthert.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:galxnetb.today": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:generalmills.pro": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:get-gpppassword.py": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ghostreedmnu.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:github.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:glize.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:go.recordedfuture": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:goalyfeastz.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:goldenloaduae.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:gouv.fr": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:governoagoal.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:great-site.net": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:gutterydhowi.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:hbclife.in": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:hemispheredodnkkl.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:hemispherexz.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:holidamyup.today": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:hoyoverse.blog": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:htardwarehu.icu": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:infinityfreeapp.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:iphlpapi.dll": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ironloxp.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:jawdedmirror.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:jowinjoinery.icu": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:jrxsafer.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:kesug.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:latchclan.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:latitudert.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ldap-dump.py": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:legenassedk.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:liftally.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:lonfgshadow.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:longitudde.digital": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:loseyourip.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:lovestoblog.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:lummac2.exe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mail-online.dk": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:media.defense": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:medicinebuckerrysa.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mercharena.biz": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:metalsyo.digital": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mockbin.io": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mockbin.org": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mocky.io": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mrodularmall.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:msedge.exe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:msn.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:musclefarelongea.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:musicallyageop.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mybiolink.io": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mysynology.net": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:mywire.org": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:naturewsounds.help": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:navstarx.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ncsc.gov": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:nestlecompany.pro": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:news.sophos": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ngrok.io": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:nighetwhisper.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:nsa.gov": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ntds.dit": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:nukib.gov": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:offensivedzvju.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ooguy.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:opposezmny.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:oreheatq.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:os.popen": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:owlflright.digital": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ownerbuffersuperw.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:pages.nist": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:paleboreei.biz": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:password.length": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:pasteflawwed.world": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:penetratebatt.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:pepperiop.digital": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:pinkipinevazzey.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:pipedream.net": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:piratetwrath.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:plantainklj.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:polskie.pl": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:pomelohgj.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:portugalmail.pt": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:prefixes.add": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:puerrogfh.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:quavabvc.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:quietswtreams.life": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:quilltayle.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:rambutanvcx.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:regencyservice.in": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:reinforcenh.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:reliabledmwqj.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:request.remoteendpoint": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:rf.gd": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ria.ee": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:roadmap.zip": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:rodformi.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:rund1132.exe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:salaccgfa.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:scenarisacri.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:seallysl.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:securityintelligence.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:seizedsentec.online": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:serverconfig.xml": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:serviceconfig.xml": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:servicedny.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:seznam.cz": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:shiningrstars.help": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:sighbtseeing.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:simple-help.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:skw.gov": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:smeltingt.run": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:sp800-63b.html": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:spacedbv.world": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ssi.gouv": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:starcloc.bet": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:starofliught.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:starrynsightsky.icu": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:steelixr.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:stogeneratmns.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:stormlegue.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:strawpeasaen.fun": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:system.security": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:targett.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:tirechinecarpet.pw": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:touvrlane.bet": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:tracnquilforest.life": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:travewlio.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:triplooqp.world": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:tsc-me.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ukwwfze.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:urlbae.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:us.af": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:valisluureamet.ee": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:vanadrink.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:vikram.anand": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:vozmeatillu.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:wallkedsleeoi.shop": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:war.zip": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:webhook.site": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:webhookapp.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:webredirect.org": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:weldorae.digital": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:winhttp.dll": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:wizzsolutions.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:wuaze.com": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:www.justice": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:www.wojsko": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:xayfarer.live": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:ywmedici.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:zestmodp.top": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "domains:zeyilname.zip": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "cves:cve-2020-12641": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "cves:cve-2020-35730": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "cves:cve-2021-44026": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "cves:cve-2023-23397": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "cves:cve-2023-38831": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "cves:cve-2024-57727": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:http://localhost:8080": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://aka.ms/cve-2023-23397scriptdoc": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://blogs.microsoft.com/on-the-issues/2022/06/22/defending-ukraine-early-lessons-from-the": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://cert.gov.ua/article/6276894": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://cert.ssi.gouv.fr/cti/certfr-2023-cti-009": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://cert.ssi.gouv.fr/cti/certfr-2025-cti-007": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://github.com/neo23x0/signature-base/blob/master/yara/gen_impacket_tools.yar": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://go.recordedfuture.com/hubfs/reports/cta-ru-2024-0530.pdf": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://media.defense.gov/2021/feb/25/2002588479/-1": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://media.defense.gov/2021/jul/01/2002753896/-1": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://media.defense.gov/2022/jun/22/2003021689/-1": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://media.defense.gov/2023/oct/05/2003314578/-1": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://media.defense.gov/2024/feb/27/2003400753/-1/-1/0/csa-russian-actors-use-routers": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://media.defense.gov/2024/jul/31/2003515137/-1": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://news.sophos.com/en-us/2025/05/27/dragonforce-actors-target-simplehelp": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://pages.nist.gov/800-63": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://securityintelligence.com/x-force/itg05-ops-leverage-israel-hamas-conflict-lures-to-deliver": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://simple-help.com/allversions": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://www.justice.gov/archives/opa/pr/justice-department-conducts-court-authorized": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "urls:https://www.wojsko-polskie.pl/woc/articles/aktualnosci-w/detecting-malicious-activity-against": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:103.97.203.29": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:109.95.151.207": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:124.168.91.178": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:138.199.59.43": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:147.135.209.245": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:159.196.128.120": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:162.210.194.2": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:178.235.191.182": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:178.37.97.243": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:185.234.235.69": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:192.162.174.67": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:192.162.174.94": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:194.126.178.8": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:194.187.180.20": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:207.244.71.84": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:209.14.71.127": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:212.127.78.170": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:213.134.184.167": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:213.32.252.221": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:31.135.199.145": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:31.42.4.138": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:46.112.70.252": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:46.248.185.236": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:64.176.67.117": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:64.176.69.196": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:64.176.70.18": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:64.176.70.238": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:64.176.71.201": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.242.220": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.243.226": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.244.100": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.245.215": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.252.168": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.252.186": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.252.222": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.253.13": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.253.247": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:70.34.254.245": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:79.184.25.198": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:79.185.5.142": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:83.10.46.174": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:83.168.66.145": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:83.168.78.27": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:83.168.78.31": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:83.168.78.55": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:83.23.130.49": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:83.29.138.115": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:89.64.70.69": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:90.156.4.204": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.202.215": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.203.73": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.219.158": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.219.23": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.223.130": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.253.118": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.253.198": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.253.20": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.253.204": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.254.75": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.255.122": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.255.19": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.149.255.195": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:91.221.88.76": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:93.105.185.139": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "ipv4:95.215.76.209": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:19cc41a0a056e503cc2137e19e952814fbdf14f8d83f799aea9b96abff11efbb": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:2f31d00feefe181f2d8b69033b382462ff19c35367753e6906ed80f815a7924f": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:325daeb781f3416a383343820064c8e98f2e31753cd71d76a886fe0dbb4fe59a": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:4d74f8e12ff69318be5eb383b4e56178817e84e83d3607213160276a7328ab5d": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:76e4962b8ccd2e6fd6972d9c3264ccb6738ddb16066588dfcb223222aaa88f3c": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:7a35008a1a1ae3d093703c3a34a21993409af42eb61161aad1b6ae4afa8bbb70": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:a9e9d7770ff948bb65c0db24431f75dd934a803181afa22b6b014fac9a162dab": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:b287c0bc239b434b90eef01bcbd00ff48192b7cbeb540e568b8cdcdc26f90959": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha256:ca47c8710c4ffb4908a42bd986b14cddcca39e30bb0b11ed5ca16fe8922a468b": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha1:1239288a5876c09d9f0a67bcfd645735168a7c80": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha1:3b267fa5e1d1b18411c22e97b367258986e871e5": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "sha1:b66da4280c6d72adcc68330f6bd793df56a853cb": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "md5:4afdc05708b8b39c82e60abe3ace55db": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "md5:c7610ae28655d6c1bce88b5d09624fef": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "md5:e05df8ee759e2c955acc8d8a47a08f42": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "windows_paths:c:\\temp\\[a-z]{3": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
+    ],
+    "windows_paths:c:\\windows\\system32\\ntdsutil.exe": [
+      {
+        "report": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "issue_number": 3,
+        "title": "CISA PDF Reports - Test Run"
+      }
     ]
   },
   "reports": {
@@ -1616,6 +4065,395 @@
           "c:\\windows\\system32\\tasks\\windows\\windowsservicesupdate\\windows"
         ]
       }
+    },
+    "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md": {
+      "metadata": {
+        "report_path": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "report_name": "issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+        "title": "CISA PDF Reports - Test Run",
+        "issue_number": 3,
+        "source_url": null,
+        "source_urls": [],
+        "source_files": [
+          "inputs/CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf",
+          "inputs/aa25-141b-threat-actors-deploy-lummac2-malware-to-exfiltrate-sensitive-data-from-organizations.pdf",
+          "inputs/aa25-163a-ransomware-simplehelp-rmm-compromise.pdf"
+        ],
+        "file_hashes": [
+          "ee86f910566aad98a37f32f075cd4bc9d4e469efa60b318ecde75c47e93e2f52",
+          "15b9706d95a9d8390b207164ee22286ae5cbcba7552f6acf80bf1d7a6d39376a",
+          "51dc012731248b5b30255e0768ef9da241f77f66a19012472587b624a13d2e04"
+        ]
+      },
+      "iocs": {
+        "domains": [
+          "000.pe",
+          "1cooldns.com",
+          "21.pdf",
+          "22.pdf",
+          "42web.io",
+          "4cloud.click",
+          "4ginfosource.com",
+          "aaa.exe",
+          "accesscan.org",
+          "address.ipaddresstostring",
+          "adexplorer.exe",
+          "advennture.top",
+          "aka.ms",
+          "alfathdoor.com",
+          "ashoke.kumar",
+          "authorizev.site",
+          "bbb.exe",
+          "bfv.bund",
+          "bhpcapital.com",
+          "bis.cz",
+          "blast-hubs.com",
+          "blastikcn.com",
+          "blogs.microsoft",
+          "bnd.bund",
+          "bplanka.com",
+          "bsi.bund",
+          "bugildbett.top",
+          "bumbleshrimp.com",
+          "calc.war",
+          "calmingtefxtures.run",
+          "camdvr.org",
+          "casacam.net",
+          "castmaxw.run",
+          "cert.gov",
+          "cert.incident",
+          "cert.ssi",
+          "changeaie.top",
+          "cisa.gov",
+          "citydisco.bet",
+          "citywand.live",
+          "cjlaspcorne.icu",
+          "clarmodq.top",
+          "clear.pdf",
+          "climatologfy.top",
+          "coastalareabank.com",
+          "collapimga.fun",
+          "computeryrati.site",
+          "contemteny.site",
+          "cosmicgold469.co",
+          "cryptography.dataprotectionscope",
+          "cryptography.protectdata",
+          "cta-ru-2024-0530.pdf",
+          "cyber.gc",
+          "cyber.gov",
+          "cyber.int",
+          "cyber.nsa",
+          "cyber.threats",
+          "dc3.dcise",
+          "dc3.information",
+          "ddnsfree.com",
+          "ddnsgeek.com",
+          "ddnsguru.com",
+          "decreaserid.world",
+          "dilemmadu.site",
+          "drawzhotdog.shop",
+          "dsfljsdfjewf.info",
+          "dynuddns.com",
+          "dynuddns.net",
+          "earthsymphzony.today",
+          "easyfwdr.digital",
+          "edge.exe",
+          "email.cz",
+          "equatorf.run",
+          "esccapewz.run",
+          "fanlumpactiras.pw",
+          "faulteyotk.site",
+          "featureccus.shop",
+          "ferromny.digital",
+          "forbidstow.site",
+          "foresctwhispers.top",
+          "fragnantbui.shop",
+          "franch1.lanka",
+          "freckletropsao.pw",
+          "free.nf",
+          "freeddns.org",
+          "frge.io",
+          "friendseforever.help",
+          "furthert.run",
+          "galxnetb.today",
+          "generalmills.pro",
+          "get-gpppassword.py",
+          "ghostreedmnu.shop",
+          "github.com",
+          "glize.com",
+          "go.recordedfuture",
+          "goalyfeastz.site",
+          "goldenloaduae.com",
+          "gouv.fr",
+          "governoagoal.pw",
+          "great-site.net",
+          "gutterydhowi.shop",
+          "hbclife.in",
+          "hemispheredodnkkl.pw",
+          "hemispherexz.top",
+          "holidamyup.today",
+          "hoyoverse.blog",
+          "htardwarehu.icu",
+          "infinityfreeapp.com",
+          "iphlpapi.dll",
+          "ironloxp.live",
+          "jawdedmirror.run",
+          "jowinjoinery.icu",
+          "jrxsafer.top",
+          "kesug.com",
+          "latchclan.shop",
+          "latitudert.live",
+          "ldap-dump.py",
+          "legenassedk.top",
+          "liftally.top",
+          "lonfgshadow.live",
+          "longitudde.digital",
+          "loseyourip.com",
+          "lovestoblog.com",
+          "lummac2.exe",
+          "mail-online.dk",
+          "media.defense",
+          "medicinebuckerrysa.pw",
+          "mercharena.biz",
+          "metalsyo.digital",
+          "mockbin.io",
+          "mockbin.org",
+          "mocky.io",
+          "mrodularmall.top",
+          "msedge.exe",
+          "msn.com",
+          "musclefarelongea.pw",
+          "musicallyageop.pw",
+          "mybiolink.io",
+          "mysynology.net",
+          "mywire.org",
+          "naturewsounds.help",
+          "navstarx.shop",
+          "ncsc.gov",
+          "nestlecompany.pro",
+          "news.sophos",
+          "ngrok.io",
+          "nighetwhisper.top",
+          "nsa.gov",
+          "ntds.dit",
+          "ntdsutil.exe",
+          "nukib.gov",
+          "offensivedzvju.shop",
+          "ooguy.com",
+          "opposezmny.site",
+          "oreheatq.live",
+          "os.popen",
+          "owlflright.digital",
+          "ownerbuffersuperw.pw",
+          "pages.nist",
+          "paleboreei.biz",
+          "password.length",
+          "pasteflawwed.world",
+          "penetratebatt.pw",
+          "pepperiop.digital",
+          "pinkipinevazzey.pw",
+          "pipedream.net",
+          "piratetwrath.run",
+          "plantainklj.run",
+          "polskie.pl",
+          "pomelohgj.top",
+          "portugalmail.pt",
+          "powershell.exe",
+          "prefixes.add",
+          "puerrogfh.live",
+          "quavabvc.top",
+          "quietswtreams.life",
+          "quilltayle.live",
+          "rambutanvcx.run",
+          "regencyservice.in",
+          "reinforcenh.shop",
+          "reliabledmwqj.shop",
+          "request.remoteendpoint",
+          "rf.gd",
+          "ria.ee",
+          "roadmap.zip",
+          "rodformi.run",
+          "rund1132.exe",
+          "rundll32.exe",
+          "salaccgfa.top",
+          "scenarisacri.top",
+          "seallysl.site",
+          "securityintelligence.com",
+          "seizedsentec.online",
+          "serverconfig.xml",
+          "serviceconfig.xml",
+          "servicedny.site",
+          "seznam.cz",
+          "shiningrstars.help",
+          "sighbtseeing.shop",
+          "simple-help.com",
+          "skw.gov",
+          "smeltingt.run",
+          "sp800-63b.html",
+          "spacedbv.world",
+          "ssi.gouv",
+          "starcloc.bet",
+          "starofliught.top",
+          "starrynsightsky.icu",
+          "steelixr.live",
+          "stogeneratmns.shop",
+          "stormlegue.com",
+          "strawpeasaen.fun",
+          "system.net",
+          "system.security",
+          "targett.top",
+          "tirechinecarpet.pw",
+          "touvrlane.bet",
+          "tracnquilforest.life",
+          "travewlio.shop",
+          "triplooqp.world",
+          "tsc-me.com",
+          "ukwwfze.com",
+          "urlbae.com",
+          "us.af",
+          "valisluureamet.ee",
+          "vanadrink.com",
+          "vikram.anand",
+          "vozmeatillu.shop",
+          "wallkedsleeoi.shop",
+          "war.zip",
+          "webhook.site",
+          "webhookapp.com",
+          "webredirect.org",
+          "weldorae.digital",
+          "winhttp.dll",
+          "wizzsolutions.com",
+          "wuaze.com",
+          "www.justice",
+          "www.wojsko",
+          "xayfarer.live",
+          "ywmedici.top",
+          "zestmodp.top",
+          "zeyilname.zip"
+        ],
+        "cves": [
+          "cve-2020-12641",
+          "cve-2020-35730",
+          "cve-2021-44026",
+          "cve-2023-23397",
+          "cve-2023-38831",
+          "cve-2024-57727"
+        ],
+        "urls": [
+          "http://localhost:8080",
+          "https://aka.ms/cve-2023-23397scriptdoc",
+          "https://blogs.microsoft.com/on-the-issues/2022/06/22/defending-ukraine-early-lessons-from-the",
+          "https://cert.gov.ua/article/6276894",
+          "https://cert.ssi.gouv.fr/cti/certfr-2023-cti-009",
+          "https://cert.ssi.gouv.fr/cti/certfr-2025-cti-007",
+          "https://github.com/neo23x0/signature-base/blob/master/yara/gen_impacket_tools.yar",
+          "https://go.recordedfuture.com/hubfs/reports/cta-ru-2024-0530.pdf",
+          "https://media.defense.gov/2021/feb/25/2002588479/-1",
+          "https://media.defense.gov/2021/jul/01/2002753896/-1",
+          "https://media.defense.gov/2022/jun/22/2003021689/-1",
+          "https://media.defense.gov/2023/oct/05/2003314578/-1",
+          "https://media.defense.gov/2024/feb/27/2003400753/-1/-1/0/csa-russian-actors-use-routers",
+          "https://media.defense.gov/2024/jul/31/2003515137/-1",
+          "https://news.sophos.com/en-us/2025/05/27/dragonforce-actors-target-simplehelp",
+          "https://pages.nist.gov/800-63",
+          "https://securityintelligence.com/x-force/itg05-ops-leverage-israel-hamas-conflict-lures-to-deliver",
+          "https://simple-help.com/allversions",
+          "https://www.justice.gov/archives/opa/pr/justice-department-conducts-court-authorized",
+          "https://www.wojsko-polskie.pl/woc/articles/aktualnosci-w/detecting-malicious-activity-against"
+        ],
+        "ipv4": [
+          "103.97.203.29",
+          "109.95.151.207",
+          "124.168.91.178",
+          "138.199.59.43",
+          "147.135.209.245",
+          "159.196.128.120",
+          "162.210.194.2",
+          "178.235.191.182",
+          "178.37.97.243",
+          "185.234.235.69",
+          "192.162.174.67",
+          "192.162.174.94",
+          "194.126.178.8",
+          "194.187.180.20",
+          "207.244.71.84",
+          "209.14.71.127",
+          "212.127.78.170",
+          "213.134.184.167",
+          "213.32.252.221",
+          "31.135.199.145",
+          "31.42.4.138",
+          "46.112.70.252",
+          "46.248.185.236",
+          "64.176.67.117",
+          "64.176.69.196",
+          "64.176.70.18",
+          "64.176.70.238",
+          "64.176.71.201",
+          "70.34.242.220",
+          "70.34.243.226",
+          "70.34.244.100",
+          "70.34.245.215",
+          "70.34.252.168",
+          "70.34.252.186",
+          "70.34.252.222",
+          "70.34.253.13",
+          "70.34.253.247",
+          "70.34.254.245",
+          "79.184.25.198",
+          "79.185.5.142",
+          "83.10.46.174",
+          "83.168.66.145",
+          "83.168.78.27",
+          "83.168.78.31",
+          "83.168.78.55",
+          "83.23.130.49",
+          "83.29.138.115",
+          "89.64.70.69",
+          "90.156.4.204",
+          "91.149.202.215",
+          "91.149.203.73",
+          "91.149.219.158",
+          "91.149.219.23",
+          "91.149.223.130",
+          "91.149.253.118",
+          "91.149.253.198",
+          "91.149.253.20",
+          "91.149.253.204",
+          "91.149.254.75",
+          "91.149.255.122",
+          "91.149.255.19",
+          "91.149.255.195",
+          "91.221.88.76",
+          "93.105.185.139",
+          "95.215.76.209"
+        ],
+        "sha256": [
+          "19cc41a0a056e503cc2137e19e952814fbdf14f8d83f799aea9b96abff11efbb",
+          "2f31d00feefe181f2d8b69033b382462ff19c35367753e6906ed80f815a7924f",
+          "325daeb781f3416a383343820064c8e98f2e31753cd71d76a886fe0dbb4fe59a",
+          "4d74f8e12ff69318be5eb383b4e56178817e84e83d3607213160276a7328ab5d",
+          "76e4962b8ccd2e6fd6972d9c3264ccb6738ddb16066588dfcb223222aaa88f3c",
+          "7a35008a1a1ae3d093703c3a34a21993409af42eb61161aad1b6ae4afa8bbb70",
+          "a9e9d7770ff948bb65c0db24431f75dd934a803181afa22b6b014fac9a162dab",
+          "b287c0bc239b434b90eef01bcbd00ff48192b7cbeb540e568b8cdcdc26f90959",
+          "ca47c8710c4ffb4908a42bd986b14cddcca39e30bb0b11ed5ca16fe8922a468b"
+        ],
+        "sha1": [
+          "1239288a5876c09d9f0a67bcfd645735168a7c80",
+          "3b267fa5e1d1b18411c22e97b367258986e871e5",
+          "b66da4280c6d72adcc68330f6bd793df56a853cb"
+        ],
+        "md5": [
+          "4afdc05708b8b39c82e60abe3ace55db",
+          "c7610ae28655d6c1bce88b5d09624fef",
+          "e05df8ee759e2c955acc8d8a47a08f42"
+        ],
+        "windows_paths": [
+          "c:\\temp\\[a-z]{3",
+          "c:\\windows\\system32\\ntdsutil.exe"
+        ]
+      }
     }
   },
   "sources": {
@@ -1623,6 +4461,9 @@
     "https://securelist.com/honeymyte-kernel-mode-rootkit/118590": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
     "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
     "https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
-    "https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md"
+    "https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
+    "sha256:ee86f910566aad98a37f32f075cd4bc9d4e469efa60b318ecde75c47e93e2f52": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+    "sha256:15b9706d95a9d8390b207164ee22286ae5cbcba7552f6acf80bf1d7a6d39376a": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+    "sha256:51dc012731248b5b30255e0768ef9da241f77f66a19012472587b624a13d2e04": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md"
   }
 }
