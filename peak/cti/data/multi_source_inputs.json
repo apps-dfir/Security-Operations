@@ -3,24 +3,16 @@
   "enable_ocr": "true",
   "sources": [
     {
-      "type": "url",
-      "value": "https://unit42.paloaltonetworks.com/ransomhouse-encryption-upgrade/"
+      "type": "file",
+      "value": "inputs/CSA_RUSSIAN_GRU_TARGET_LOGISTICS.pdf"
     },
     {
-      "type": "url",
-      "value": "https://securelist.com/honeymyte-kernel-mode-rootkit/118590/"
+      "type": "file",
+      "value": "inputs/aa25-141b-threat-actors-deploy-lummac2-malware-to-exfiltrate-sensitive-data-from-organizations.pdf"
     },
     {
-      "type": "url",
-      "value": "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/"
-    },
-    {
-      "type": "url",
-      "value": "https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/"
-    },
-    {
-      "type": "url",
-      "value": "https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust/"
+      "type": "file",
+      "value": "inputs/aa25-163a-ransomware-simplehelp-rmm-compromise.pdf"
     }
   ]
 }
