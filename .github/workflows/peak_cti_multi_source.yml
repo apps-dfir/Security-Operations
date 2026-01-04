@@ -248,54 +248,30 @@ jobs:
             --output-stats STATS.md \
             --repo-url "https://github.com/${{ github.repository }}" || echo "⚠️  Dashboard generation skipped"
 
-      - name: Commit OCR images and dashboard to main
+      - name: Prepare assets for PR
         run: |
           cd ${{ github.workspace }}
           
-          # Configure git
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "📦 Preparing all assets for PR..."
           
-          # Add OCR images if they exist
+          # List what will be included
           if [ -d "peak/cti/data/ocr_images" ] && [ "$(ls -A peak/cti/data/ocr_images 2>/dev/null)" ]; then
-            echo "Adding OCR images..."
-            git add peak/cti/data/ocr_images/
+            echo "  📸 OCR images: $(ls peak/cti/data/ocr_images | wc -l) files"
           fi
           
-          # Add dashboard files
           if [ -f "peak/cti/dashboard/index.html" ]; then
-            echo "Adding dashboard..."
-            git add peak/cti/dashboard/
+            echo "  📊 Dashboard: index.html"
           fi
           
-          # Add STATS.md
           if [ -f "peak/cti/STATS.md" ]; then
-            echo "Adding stats..."
-            git add peak/cti/STATS.md
+            echo "  📈 Stats: STATS.md"
           fi
           
-          # Add updated database
           if [ -f "peak/cti/data/ioc_database.json" ]; then
-            echo "Adding IOC database..."
-            git add peak/cti/data/ioc_database.json
+            echo "  🗄️  IOC database: ioc_database.json"
           fi
           
-          # Commit if there are changes
-          if git diff --staged --quiet; then
-            echo "No changes to commit to main"
-          else
-            git commit -m "Update OCR images, dashboard, and database for issue #${{ github.event.issue.number }}"
-            
-            # Pull latest changes and rebase to handle concurrent pushes
-            git pull --rebase origin main || {
-              echo "⚠️  Rebase failed, attempting merge..."
-              git rebase --abort 2>/dev/null || true
-              git pull origin main --no-rebase
-            }
-            
-            git push origin main
-            echo "✅ Pushed OCR images and dashboard to main"
-          fi
+          echo "✅ All assets ready for PR"
 
       - name: Create Pull Request for Report
         uses: peter-evans/create-pull-request@v6
@@ -304,6 +280,12 @@ jobs:
           commit-message: "PEAK CTI consolidated report for issue #${{ github.event.issue.number }}"
           branch: peak-drafts/issue-${{ github.event.issue.number }}
           title: "PEAK CTI Consolidated: ${{ github.event.issue.title }}"
+          add-paths: |
+            peak/cti/reports/
+            peak/cti/data/ocr_images/
+            peak/cti/data/ioc_database.json
+            peak/cti/dashboard/
+            peak/cti/STATS.md
           body: |
             ## 📊 PEAK CTI Consolidated Report
             
@@ -312,25 +294,29 @@ jobs:
             **Sources Processed:** ${{ steps.parse.outputs.source_count }}
             **OCR Enabled:** ${{ steps.parse.outputs.enable_ocr }}
             
-            ### Report Features
-            - ✅ Single consolidated report from all sources
-            - ✅ IOCs deduplicated across sources
-            - ✅ Each IOC linked to its source article
+            ### Included in this PR
+            - ✅ Consolidated threat intel report
+            - ✅ IOCs deduplicated across sources with confidence scoring
             - ✅ MITRE ATT&CK techniques with source attribution
-            - ✅ Per-source details in collapsible section
-            - ✅ OCR extracted images with linked results
-            
-            ### Assets Updated on Main
-            - 📊 [Dashboard](../blob/main/peak/cti/dashboard/index.html)
-            - 📈 [Stats](../blob/main/peak/cti/STATS.md)
-            - 🖼️ [OCR Images](../tree/main/peak/cti/data/ocr_images)
+            - ✅ OCR extracted images (if enabled)
+            - ✅ Updated IOC database
+            - ✅ Updated dashboard and stats
             
             ### Review Checklist
-            - [ ] Verify IOCs are accurate
-            - [ ] Check MITRE ATT&CK mappings
-            - [ ] Review OCR extracted content
-            - [ ] Fill in Executive Summary
+            - [ ] Verify HIGH confidence IOCs are accurate
+            - [ ] Check MITRE ATT&CK technique mappings
+            - [ ] Review OCR extracted content (if applicable)
+            - [ ] Fill in Executive Summary section
+            - [ ] Add analyst notes as needed
             
+            ### After Merge
+            All assets will be available on main:
+            - 📄 Report: `peak/cti/reports/`
+            - 📊 Dashboard: `peak/cti/dashboard/index.html`
+            - 📈 Stats: `peak/cti/STATS.md`
+            - 🗄️ Database: `peak/cti/data/ioc_database.json`
+            
+            ---
             **Auto-generated by PEAK CTI v3.0**
           labels: peak-cti-report,multi-source,consolidated
           delete-branch: true

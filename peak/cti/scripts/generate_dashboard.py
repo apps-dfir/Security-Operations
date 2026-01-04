@@ -124,8 +124,8 @@ def collect_comprehensive_metrics(reports_dir: Path, database_path: Path) -> dic
             metrics['reports_by_week'][week] = metrics['reports_by_week'].get(week, 0) + 1
         
         # Extract MITRE techniques
-        # Format: **T1234** or **T1234.001**
-        techniques = re.findall(r'\*\*([T]\d{4}(?:\.\d{3})?)\*\*', content)
+        # Format: T1234 or T1234.001 (with or without markdown bold)
+        techniques = re.findall(r'\b(T\d{4}(?:\.\d{3})?)\b', content)
         for tech in techniques:
             metrics['mitre_techniques'][tech] = metrics['mitre_techniques'].get(tech, 0) + 1
         
