@@ -1,12 +1,12 @@
 # PEAK CTI - Automated Cyber Threat Intelligence Pipeline
 
-**Version 3.0** | Multi-Source Processing | IOC Confidence Scoring | MITRE ATT&CK Mapping | OCR Extraction
+**Version 3.0** | Multi-Source Processing | IOC Confidence Scoring | MITRE ATT&CK Extraction | OCR Extraction
 
 ---
 
 ## What is PEAK CTI?
 
-PEAK CTI automates the extraction of threat intelligence from security articles and documents. Submit URLs or files via GitHub Issues, and the system automatically extracts IOCs, maps MITRE ATT&CK techniques, and generates analyst-ready reports.
+PEAK CTI automates the extraction of threat intelligence from security articles and documents. Submit URLs or files via GitHub Issues, and the system automatically extracts IOCs, extracts MITRE ATT&CK techniques, and generates analyst-ready reports.
 
 ---
 
@@ -42,7 +42,7 @@ The workflow automatically:
 - Checks for duplicate sources (skips already-processed URLs/files)
 - Fetches and parses each source
 - Extracts IOCs with confidence scoring
-- Maps MITRE ATT&CK techniques
+- Extracts MITRE ATT&CK techniques
 - Runs OCR on images (if enabled)
 - Generates a consolidated markdown report
 - Creates a Pull Request
