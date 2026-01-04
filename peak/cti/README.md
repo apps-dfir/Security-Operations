@@ -43,7 +43,7 @@ Core Python modules:
 - `article_parser.py` - Web article extraction
 - `file_parser.py` - PDF/DOCX parsing
 - `ioc_extract.py` - IOC extraction with scoring
-- `mitre.py` - MITRE ATT&CK mapping
+- `mitre.py` - MITRE ATT&CK extraction
 - `ocr.py` - Image OCR processing
 
 ### scripts/
