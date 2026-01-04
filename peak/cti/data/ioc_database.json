@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated": "2026-01-01T02:33:01.827094",
-    "total_reports": 2,
-    "total_iocs": 544
+    "generated": "2026-01-04T00:23:20.673844",
+    "total_reports": 3,
+    "total_iocs": 560
   },
   "ioc_index": {
     "cves:cve-2019-11580": [
@@ -3832,6 +3832,118 @@
         "issue_number": 3,
         "title": "CISA PDF Reports - Test Run"
       }
+    ],
+    "domains:ast.nodevisitor": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:injection-obf.js": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:obfuscator.io": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:ptb.discord": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:pycdc.exe": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:python311.dll": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:script.py": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:update.exe": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:user32.dll": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:vvs.py": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "domains:vvs.pyc": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "ipv4:115.0.0.0": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "sha256:307d9cefa7a3147eb78c69eded273e47c08df44c2004f839548963268d19dd87": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "sha256:7a1554383345f31f3482ba3729c1126af7c1d9376abb07ad3ee189660c166a2b": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "sha256:c7e6591e5e021daa30f949a6f6e0699ef2935d2d7c06ea006e3b201c52666e07": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
+    ],
+    "md5:273b1b1373cf25e054a61e2cb8a947b8": [
+      {
+        "report": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "issue_number": 6,
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion"
+      }
     ]
   },
   "reports": {
@@ -4454,6 +4566,46 @@
           "c:\\windows\\system32\\ntdsutil.exe"
         ]
       }
+    },
+    "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md": {
+      "metadata": {
+        "report_path": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "report_name": "issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md",
+        "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion",
+        "issue_number": 6,
+        "source_url": null,
+        "source_urls": [
+          "https://unit42.paloaltonetworks.com/vvs-stealer/"
+        ],
+        "source_files": [],
+        "file_hashes": []
+      },
+      "iocs": {
+        "domains": [
+          "ast.nodevisitor",
+          "injection-obf.js",
+          "obfuscator.io",
+          "ptb.discord",
+          "pycdc.exe",
+          "python311.dll",
+          "script.py",
+          "update.exe",
+          "user32.dll",
+          "vvs.py",
+          "vvs.pyc"
+        ],
+        "ipv4": [
+          "115.0.0.0"
+        ],
+        "sha256": [
+          "307d9cefa7a3147eb78c69eded273e47c08df44c2004f839548963268d19dd87",
+          "7a1554383345f31f3482ba3729c1126af7c1d9376abb07ad3ee189660c166a2b",
+          "c7e6591e5e021daa30f949a6f6e0699ef2935d2d7c06ea006e3b201c52666e07"
+        ],
+        "md5": [
+          "273b1b1373cf25e054a61e2cb8a947b8"
+        ]
+      }
     }
   },
   "sources": {
@@ -4464,6 +4616,7 @@
     "https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust": "reports/issue-1_unit42-blogs-url-test-run_consolidated_20260101_022151_955157.md",
     "sha256:ee86f910566aad98a37f32f075cd4bc9d4e469efa60b318ecde75c47e93e2f52": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
     "sha256:15b9706d95a9d8390b207164ee22286ae5cbcba7552f6acf80bf1d7a6d39376a": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
-    "sha256:51dc012731248b5b30255e0768ef9da241f77f66a19012472587b624a13d2e04": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md"
+    "sha256:51dc012731248b5b30255e0768ef9da241f77f66a19012472587b624a13d2e04": "reports/issue-3_cisa-pdf-reports-test-run_consolidated_20260101_023014_790515.md",
+    "https://unit42.paloaltonetworks.com/vvs-stealer": "reports/issue-6_vvs-discord-stealer-using-pyarmor-for-obfuscation-and-detection-evasion_consolidated_20260104_002320_500814.md"
   }
 }
