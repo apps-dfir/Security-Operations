@@ -11,7 +11,7 @@ This directory contains the core Python modules that power PEAK CTI's threat int
 | `article_parser.py` | Extract content from web articles |
 | `file_parser.py` | Parse PDF and DOCX documents |
 | `ioc_extract.py` | Extract and score IOCs |
-| `mitre.py` | Map MITRE ATT&CK techniques |
+| `mitre.py` | Extracts MITRE ATT&CK techniques |
 | `ocr.py` | OCR processing for images |
 | `defang_handler.py` | Defang/refang IOC utilities |
 | `multi_source_handler.py` | Parse multi-source input |
@@ -96,9 +96,9 @@ for ioc in scored.sha256:
 
 ---
 
-## mitre.py
+## .py
 
-Maps content to MITRE ATT&CK techniques.
+Extracts MITRE techniques from content.
 
 ### Usage
 
