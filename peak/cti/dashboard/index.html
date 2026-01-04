@@ -166,20 +166,20 @@
         <header>
             <h1>🎯 PEAK CTI Dashboard</h1>
             <p>Cyber Threat Intelligence Analytics</p>
-            <p style="color: var(--text-secondary); font-size: 0.9em;">Last updated: 2026-01-01T02:30:15</p>
+            <p style="color: var(--text-secondary); font-size: 0.9em;">Last updated: 2026-01-04T00:23:20</p>
         </header>
         
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-value">2</div>
+                <div class="stat-value">3</div>
                 <div class="stat-label">Total Reports</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">544</div>
+                <div class="stat-value">560</div>
                 <div class="stat-label">IOCs Tracked</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">0</div>
+                <div class="stat-value">58</div>
                 <div class="stat-label">MITRE Techniques</div>
             </div>
             <div class="stat-card">
@@ -268,6 +268,11 @@
                     <tbody>
                         
         <tr>
+            <td><a href="https://github.com/apps-dfir/Security-Operations/issues/6">#6</a></td>
+            <td>VVS Discord Stealer Using Pyarmor for Obfuscation ...</td>
+            <td>2026-01-04</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/apps-dfir/Security-Operations/issues/3">#3</a></td>
             <td>CISA PDF Reports - Test Run</td>
             <td>2026-01-01</td>
@@ -305,7 +310,7 @@
         // Timeline Chart
         Plotly.newPlot('timeline-chart', [{
             x: ["2026-01"],
-            y: [2],
+            y: [3],
             type: 'scatter',
             mode: 'lines+markers',
             fill: 'tozeroy',
@@ -321,7 +326,7 @@
         // IOC Distribution Chart
         Plotly.newPlot('ioc-chart', [{
             labels: ["ipv4", "domains", "urls", "sha256", "sha1", "md5", "cves"],
-            values: [84, 334, 38, 63, 3, 6, 9],
+            values: [85, 345, 38, 66, 3, 7, 9],
             type: 'pie',
             hole: 0.4,
             marker: {
@@ -336,12 +341,12 @@
         
         // MITRE Techniques Chart
         Plotly.newPlot('technique-chart', [{
-            x: [],
-            y: [],
+            x: [3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+            y: ["T1204.001", "T1566.002", "T1027", "T1036", "T1059.003", "T1059.005", "T1059", "T1110.001", "T1119", "T1140", "T1190", "T1199", "T1204.002", "T1566.001", "T1566"],
             type: 'bar',
             orientation: 'h',
             marker: {
-                color: [],
+                color: [3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
                 colorscale: [[0, '#3fb950'], [0.5, '#d29922'], [1, '#f85149']]
             }
         }], {
@@ -352,8 +357,8 @@
         
         // Threat Actors Chart
         Plotly.newPlot('actor-chart', [{
-            x: ["APT28", "TA", "Fancy Bear", "GRU", "LummaC2", "UNC"],
-            y: [1, 2, 1, 1, 1, 1],
+            x: ["TA", "APT28", "Fancy Bear", "GRU", "LummaC2", "UNC"],
+            y: [3, 1, 1, 1, 1, 1],
             type: 'bar',
             marker: {
                 color: '#a371f7',

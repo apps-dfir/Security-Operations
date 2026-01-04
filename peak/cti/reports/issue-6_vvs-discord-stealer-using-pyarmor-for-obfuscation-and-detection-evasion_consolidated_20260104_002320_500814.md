@@ -1,0 +1,142 @@
+# VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion
+
+## 📋 Report Metadata
+
+**Issue:** [#6](https://github.com/apps-dfir/Security-Operations/issues/6)<br>
+**Analyst:** Apramey 'Apps' Shurpali<br>
+**Generated:** 2026-01-04 00:23:20 UTC<br>
+**Sources Processed:** 1<br>
+**OCR Enabled:** Yes
+
+## 📚 Sources
+
+1. [VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion](https://unit42.paloaltonetworks.com/vvs-stealer/)
+
+## 📊 Report Summary
+
+**Total Unique IOCs:** 19<br>
+**High Confidence IOCs:** 14<br>
+**MITRE ATT&CK Techniques:** 0<br>
+**Images with OCR Data:** 3<br>
+**Breakdown:** Domains: 11, IPs: 1, SHA256: 3, MD5: 1, Commands: 3
+
+## Executive Summary (Analyst Fill-In)
+
+### Key Takeaways
+- What happened (1-2 bullets)
+- Who/what is affected (orgs, sectors, regions)
+- Why it matters to us (risk / exposure / priority)
+
+### Initial Assessment
+- Confidence level: (low/med/high)
+- Recommended actions: (monitor / hunt / block / brief)
+
+## 🔍 Consolidated Indicators of Compromise
+
+> IOCs are deduplicated across sources. Confidence: 🟢 HIGH | 🟡 MEDIUM | 🔴 LOW
+
+### Domains
+
+- 🟢 `Obfuscator[.]io` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🟢 `ast[.]NodeVisitor` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🟢 `ptb[.]discord` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🟢 `script[.]py` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🟢 `vvs[.]py` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🟢 `vvs[.]pyc` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🔴 `Update[.]exe` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🔴 `User32[.]dll` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🔴 `injection-obf[.]js` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🔴 `pycdc[.]exe` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🔴 `python311[.]dll` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+
+### IP Addresses
+
+- 🟢 `115[.]0[.]0[.]0` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+
+### File Hashes
+
+**SHA256:**
+- 🟢 `307d9cefa7a3147eb78c69eded273e47c08df44c2004f839548963268d19dd87` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🟢 `7a1554383345f31f3482ba3729c1126af7c1d9376abb07ad3ee189660c166a2b` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+- 🟢 `c7e6591e5e021daa30f949a6f6e0699ef2935d2d7c06ea006e3b201c52666e07` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+
+**MD5:**
+- 🟢 `273b1b1373cf25e054a61e2cb8a947b8` [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+
+### Command Lines
+
+🟢 Command:
+```
+Python major version
+```
+Sources: [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+
+🟢 Command:
+```
+Python minor version
+```
+Sources: [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+
+🟢 Command:
+```
+Python source code.
+```
+Sources: [[1]](https://unit42.paloaltonetworks.com/vvs-stealer/)
+
+## 📄 Source Details
+
+> Expand each source for detailed information extracted from that article.
+
+<details>
+<summary><strong>Source 1: VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion</strong></summary>
+
+**URL:** https://unit42.paloaltonetworks.com/vvs-stealer/
+
+**IOCs from this source:** 19<br>
+**MITRE techniques:** 0
+
+**Excerpt:**
+> Executive Summary This article details our technical analysis of VVS stealer, also styled VVS $tealer, including its distributors’ use of obfuscation and detection evasion. The stealer is written in Python and targets Discord users, exfiltrating sensitive information like credentials and tokens stored in Discord accounts. This stealer was once in active development and marketed for sale on Telegram as early as April 2025. VVS stealer's code is obfuscated by Pyarmor . This tool is used to obfusca...
+
+</details>
+
+## 🔍 OCR Extracted Content
+
+> Images extracted from source documents with OCR text. Click to expand each image.
+
+<details>
+<summary><strong>Image 1</strong> from vvs-stealer</summary>
+
+**View Image:** [url_img_001_8ec11303a508.png](https://github.com/apps-dfir/Security-Operations/blob/main/peak/cti/data/ocr_images/url_img_001_8ec11303a508.png)
+
+**Extracted Text:**
+> %
+
+</details>
+
+<details>
+<summary><strong>Image 8</strong> from vvs-stealer</summary>
+
+**View Image:** [url_img_036_58c9b3604262.jpg](https://github.com/apps-dfir/Security-Operations/blob/main/peak/cti/data/ocr_images/url_img_036_58c9b3604262.jpg)
+
+**Extracted Text:**
+> ee oe olan," tee sees” bine 2904 2 SP iam OE at bias,  i  i eka
+
+</details>
+
+<details>
+<summary><strong>Image 11</strong> from vvs-stealer</summary>
+
+**View Image:** [url_img_045_30d6fae6a658.jpg](https://github.com/apps-dfir/Security-Operations/blob/main/peak/cti/data/ocr_images/url_img_045_30d6fae6a658.jpg)
+
+**Extracted Text:**
+> 01 :d008% so
+
+</details>
+
+**OCR Summary:** 3 images processed with text extracted
+
+---
+
+*Generated by PEAK CTI v3.0 Multi-Source Consolidated Report*
+*2026-01-04 00:23:20 UTC*
