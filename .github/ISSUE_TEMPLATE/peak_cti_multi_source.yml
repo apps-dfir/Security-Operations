@@ -1,0 +1,42 @@
+name: PEAK CTI Multi-Source Submission
+description: Submit threat intelligence sources for automated processing
+title: "[CTI] "
+labels: ["multi-source"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit Threat Intelligence Sources
+        
+        Add up to 5 URLs or file references for processing.
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources (up to 5)
+      description: Enter URLs or file paths (one per line, numbered)
+      placeholder: |
+        1. <paste-threat-report-url>
+        2. <paste-advisory-url>
+        3. inputs/report.pdf
+    validations:
+      required: true
+
+  - type: input
+    id: analyst
+    attributes:
+      label: Analyst
+      description: Your name or handle
+      placeholder: "Analyst Name"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ocr
+    attributes:
+      label: Enable OCR
+      description: Extract text from images in articles/PDFs
+      options:
+        - "no"
+        - "yes"
+      default: 0
