@@ -31,6 +31,6 @@ This repository is intentionally human-led. Analyst judgment, reasoning, and dec
 January 2026 begins at LOCK Level 1. All hunts are executed and documented manually.
 
 ## Acknowledgements
-The PARALLAX team acknowledges Sydney Marone and the Nebulock team for publicly sharing the Agentic Threat Hunting Framework (ATHF), which helped influence early thinking around structured hunts and documentation.
+The PARALLAX team acknowledges the Nebulock team for publicly sharing the Agentic Threat Hunting Framework (ATHF), which helped influence early thinking around structured hunts and documentation.
 
 PARALLAX maintains its own workflows, structure, and hunting philosophy.
