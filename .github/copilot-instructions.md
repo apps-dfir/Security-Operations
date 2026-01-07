@@ -5,7 +5,7 @@ This is PEAK CTI, a GitHub-native threat intelligence processing toolkit. It aut
 **Always check if the branch is behind `main`.**
 If this PR modifies any of these files:
 - `peak/cti/data/ioc_database.json`
-- `peak/cti/data/dashboard_metrics.json`
+- `docs/metrics.json`
 - `peak/cti/STATS.md`
 - `peak/cti/dashboard/index.html`
 Remind the author:
