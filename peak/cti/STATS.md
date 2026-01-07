@@ -1,18 +1,18 @@
 # PEAK CTI Statistics
 
-Last Updated: 2026-01-06 20:39 UTC
+Last Updated: 2026-01-07 15:59 UTC
 
 | Metric | Value |
 |--------|-------|
-| Reports | 4 |
-| IOCs | 775 |
-| MITRE Techniques | 92 |
+| Reports | 5 |
+| IOCs | 802 |
+| MITRE Techniques | 93 |
 | Threat Actors | 16 |
 
 ## Confidence
 
 | Level | Count |
 |-------|-------|
-| HIGH | 120 |
-| MEDIUM | 629 |
+| HIGH | 124 |
+| MEDIUM | 649 |
 | LOW | 0 |
