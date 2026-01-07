@@ -1,0 +1,1 @@
+Pinned XQL queries used by specific hunts
