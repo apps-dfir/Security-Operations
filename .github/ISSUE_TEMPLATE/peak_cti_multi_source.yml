@@ -45,7 +45,7 @@ body:
     id: llm_mitre
     attributes:
       label: LLM MITRE Validation
-      description: Use Claude to validate technique context and suggest missing TTPs (uses API credits, personal repo only)
+      description: Use Claude to validate technique context and suggest missing TTPs
       options:
         - "no"
         - "yes"
