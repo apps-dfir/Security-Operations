@@ -2,6 +2,34 @@
 
 All notable changes to PEAK CTI.
 
+## [3.3.0] - 2026-01-08
+
+### Added
+- MITRE ATT&CK technique validation (P1+P2+P3)
+  - P1: Filters deprecated and revoked techniques against current ATT&CK schema
+  - P1: Validates technique IDs exist in enterprise-attack.json
+  - P2: Resolves correct sub-technique names (e.g., "Steganography" not "Obfuscated Files")
+  - P3: Optional LLM-assisted context validation (personal repo only)
+- Extraction warnings section in reports
+  - Shows deprecated techniques that were removed (e.g., T1063, T1093)
+  - Shows invalid technique IDs that don't exist in ATT&CK
+  - Shows context mismatches when LLM validation is enabled
+- LLM MITRE Validation toggle in issue template
+  - Opt-in per submission
+  - Requires ANTHROPIC_API_KEY secret for personal repo
+  - Gracefully disabled in enterprise (no anthropic package)
+- LLM-suggested techniques section in reports
+  - Infers missing techniques from attack narrative
+  - Includes confidence level (HIGH/MEDIUM)
+
+### Changed
+- MITRE section now displays parent:sub-technique format (e.g., "Process Injection: Process Hollowing")
+- Report summary includes LLM validation status when used
+
+### Fixed
+- Sub-technique names no longer show parent name only (T1027.003 shows "Steganography")
+- Deprecated techniques (T1063, T1093) no longer appear in reports
+
 ## [3.2.0] - 2026-01-06
 
 ### Added
