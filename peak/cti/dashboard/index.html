@@ -97,12 +97,12 @@
             </div>
             <div class="header-meta">
                 <div>Threat Intelligence Operations</div>
-                <div>2026-01-09 00:57 UTC</div>
+                <div>2026-01-09 01:18 UTC</div>
             </div>
         </header>
         
         <div class="stats-grid">
-            <div class="stat-card"><div class="stat-label">Total Reports</div><div class="stat-value">6</div></div>
+            <div class="stat-card"><div class="stat-label">Total Reports</div><div class="stat-value">7</div></div>
             <div class="stat-card highlight"><div class="stat-label">Total IOCs</div><div class="stat-value">917</div></div>
             <div class="stat-card"><div class="stat-label">MITRE Techniques</div><div class="stat-value">129</div></div>
             <div class="stat-card"><div class="stat-label">Threat Actors</div><div class="stat-value">19</div></div>
@@ -140,7 +140,7 @@
                 <h3>Recent Intelligence Reports</h3>
                 <table>
                     <thead><tr><th>Report</th><th>Date</th><th>Sources</th><th>IOCs</th></tr></thead>
-                    <tbody><tr><td class="title-cell">Shai-Hulud 2.0: Guidance for detecting, ...</td><td>2026-01-06</td><td class="count-cell">1</td><td class="count-cell">16</td></tr><tr><td class="title-cell">CISA-PDF Reports & Links</td><td>2026-01-06</td><td class="count-cell">5</td><td class="count-cell">418</td></tr><tr><td class="title-cell">Multiple Threat Actors Exploit React2She...</td><td>2026-01-06</td><td class="count-cell">4</td><td class="count-cell">190</td></tr><tr><td class="title-cell">Unit42 Blogs</td><td>2026-01-06</td><td class="count-cell">5</td><td class="count-cell">159</td></tr><tr><td class="title-cell">Cobalt Strike and a Pair of SOCKS Lead t...</td><td>2026-01-09</td><td class="count-cell">1</td><td class="count-cell">117</td></tr><tr><td class="title-cell">Stealth in Layers: Unmasking the Loader ...</td><td>2026-01-08</td><td class="count-cell">1</td><td class="count-cell">32</td></tr></tbody>
+                    <tbody><tr><td class="title-cell">Shai-Hulud 2.0: Guidance for detecting, ...</td><td>2026-01-06</td><td class="count-cell">1</td><td class="count-cell">16</td></tr><tr><td class="title-cell">CISA-PDF Reports & Links</td><td>2026-01-06</td><td class="count-cell">5</td><td class="count-cell">418</td></tr><tr><td class="title-cell">Multiple Threat Actors Exploit React2She...</td><td>2026-01-06</td><td class="count-cell">4</td><td class="count-cell">190</td></tr><tr><td class="title-cell">India Criminalizes Tampering with Teleco...</td><td>2026-01-09</td><td class="count-cell">1</td><td class="count-cell">0</td></tr><tr><td class="title-cell">Unit42 Blogs</td><td>2026-01-06</td><td class="count-cell">5</td><td class="count-cell">159</td></tr><tr><td class="title-cell">Cobalt Strike and a Pair of SOCKS Lead t...</td><td>2026-01-09</td><td class="count-cell">1</td><td class="count-cell">117</td></tr><tr><td class="title-cell">Stealth in Layers: Unmasking the Loader ...</td><td>2026-01-08</td><td class="count-cell">1</td><td class="count-cell">32</td></tr></tbody>
                 </table>
             </div>
         </div>
@@ -160,7 +160,7 @@
             type: 'bar',
             data: {
                 labels: ["2026-01"],
-                datasets: [{ data: [6], backgroundColor: '#475569', borderRadius: 3 }]
+                datasets: [{ data: [7], backgroundColor: '#475569', borderRadius: 3 }]
             },
             options: {
                 responsive: true,
@@ -212,8 +212,8 @@
         });
         
         // MITRE
-        const mitreLabels = ["T1036: Masquerading", "T1059.001: Command and Scriptin...", "T1204.002: User Execution", "T1059.007: Command and Scriptin...", "T1218.011: System Binary Proxy ...", "T1589.001: Credentials", "T1592.002: Software", "T1027.015: Compression"];
-        const mitreCounts = [5, 5, 5, 4, 4, 4, 4, 3];
+        const mitreLabels = ["T1036: Masquerading", "T1059.001: Command and Scriptin...", "T1204.002: User Execution", "T1592.002: Software", "T1059.007: Command and Scriptin...", "T1218.011: System Binary Proxy ...", "T1589.001: Credentials", "T1592.001: Hardware"];
+        const mitreCounts = [5, 5, 5, 5, 4, 4, 4, 3];
         new Chart(document.getElementById('mitreChart'), {
             type: 'bar',
             data: {
