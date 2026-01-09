@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from typing import List
 
 from .ioc_extract import extract_iocs_with_confidence, ScoredIOC
-from .mitre import MitreSection
+from .mitre import MitreSection, format_warnings_markdown
 
 
 @dataclass
@@ -269,17 +269,41 @@ def build_markdown(inp: ReportInputs) -> str:
         lines.append("")
     else:
         if inp.mitre.techniques:
-            lines.append("### Techniques Identified (Auto)")
-            for t in inp.mitre.techniques:
-                lines.append(f"- **{t.id}**{': ' + t.name if t.name else ''}")
-            lines.append("")
+            # Separate extracted vs LLM-suggested
+            extracted = [t for t in inp.mitre.techniques if t.source != "llm_suggested"]
+            suggested = [t for t in inp.mitre.techniques if t.source == "llm_suggested"]
+            
+            if extracted:
+                lines.append("### Techniques Identified (Auto)")
+                for t in extracted:
+                    lines.append(f"- **{t.id}**{': ' + t.name if t.name else ''}")
+                lines.append("")
+            
+            if suggested:
+                lines.append("### LLM-Suggested Techniques")
+                lines.append("> These techniques were inferred by LLM analysis of the attack narrative.")
+                lines.append("")
+                for t in suggested:
+                    conf_badge = f" [{t.confidence}]" if t.confidence else ""
+                    lines.append(f"- **{t.id}**{': ' + t.name if t.name else ''}{conf_badge}")
+                lines.append("")
         else:
             lines.append("_No techniques were auto-identified. Validate manually._")
             lines.append("")
+        
+        # Add warnings section if any
+        if inp.mitre.warnings:
+            warnings_md = format_warnings_markdown(inp.mitre.warnings)
+            if warnings_md:
+                lines.append(warnings_md)
+                lines.append("")
 
     lines.append("### Extraction Notes")
-    lines.append("- Auto-extraction is best-effort. Validate against the report and your telemetry.")
-    lines.append("- Prefer techniques tied to observable behavior.")
+    extraction_notes = ["- Auto-extraction is best-effort. Validate against the report and your telemetry."]
+    extraction_notes.append("- Prefer techniques tied to observable behavior.")
+    if inp.mitre.llm_used:
+        extraction_notes.append("- LLM validation was used to verify technique context.")
+    lines.extend(extraction_notes)
     lines.append("")
 
     lines.append("## Observables From OCR (Auto)")

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEAK CTI Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #09090b;
+            --bg-card: #18181b;
+            --border: #27272a;
+            --text: #fafafa;
+            --text-muted: #71717a;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+        .container { max-width: 1500px; margin: 0 auto; padding: 24px; }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0 24px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+        .logo { font-size: 20px; font-weight: 600; }
+        .logo span { color: var(--text-muted); font-weight: 400; }
+        .version { background: var(--bg-card); border: 1px solid var(--border); padding: 3px 8px; border-radius: 4px; font-size: 11px; color: var(--text-muted); margin-left: 12px; }
+        .header-meta { color: var(--text-muted); font-size: 12px; text-align: right; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .stat-card.highlight { border-color: var(--slate-600); }
+        .stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .stat-value { font-size: 32px; font-weight: 700; }
+        .charts-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px; }
+        .chart-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .chart-card.wide { grid-column: span 2; }
+        .chart-card h3 { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; font-weight: 500; }
+        .chart-container { position: relative; height: 260px; }
+        .chart-container.short { height: 200px; }
+        .tables-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .table-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .table-card h3 { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; font-weight: 500; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); color: var(--text-muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500; }
+        td { padding: 8px 10px; border-bottom: 1px solid #1f1f23; color: #a1a1aa; }
+        tr:last-child td { border-bottom: none; }
+        .ioc-cell code { font-family: 'SF Mono', Monaco, monospace; font-size: 11px; background: var(--bg-primary); padding: 2px 5px; border-radius: 3px; }
+        .title-cell { color: var(--text); font-weight: 500; }
+        .count-cell { text-align: center; font-weight: 600; color: var(--text); }
+        .conf-badge { padding: 2px 8px; border-radius: 3px; font-size: 10px; font-weight: 600; }
+        .conf-high { background: #14532d; color: #4ade80; }
+        .conf-medium { background: #422006; color: #fb923c; }
+        .conf-low { background: #450a0a; color: #f87171; }
+        .empty { text-align: center; padding: 40px; color: var(--text-muted); }
+        footer { text-align: center; padding: 20px; color: var(--text-muted); font-size: 11px; margin-top: 24px; border-top: 1px solid var(--border); }
+        footer a { color: var(--slate-400); text-decoration: none; }
+        @media (max-width: 1000px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .charts-grid, .tables-grid { grid-template-columns: 1fr; }
+            .chart-card.wide { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <span class="logo">PEAK CTI <span>Dashboard</span></span>
+                <span class="version">v3.2</span>
+            </div>
+            <div class="header-meta">
+                <div>Threat Intelligence Operations</div>
+                <div>2026-01-08 15:21 UTC</div>
+            </div>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card"><div class="stat-label">Total Reports</div><div class="stat-value">5</div></div>
+            <div class="stat-card highlight"><div class="stat-label">Total IOCs</div><div class="stat-value">807</div></div>
+            <div class="stat-card"><div class="stat-label">MITRE Techniques</div><div class="stat-value">112</div></div>
+            <div class="stat-card"><div class="stat-label">Threat Actors</div><div class="stat-value">16</div></div>
+        </div>
+        
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Reports Timeline</h3>
+                <div class="chart-container"><canvas id="timelineChart"></canvas></div>
+            </div>
+            <div class="chart-card">
+                <h3>IOC Distribution</h3>
+                <div class="chart-container"><canvas id="iocChart"></canvas></div>
+            </div>
+            <div class="chart-card">
+                <h3>Confidence Distribution</h3>
+                <div class="chart-container short"><canvas id="confChart"></canvas></div>
+            </div>
+            <div class="chart-card">
+                <h3>Top MITRE ATT&CK Techniques</h3>
+                <div class="chart-container"><canvas id="mitreChart"></canvas></div>
+            </div>
+            <div class="chart-card wide"><h3>Threat Actor Attribution</h3><div class="chart-container short"><canvas id="actorChart"></canvas></div></div>
+        </div>
+        
+        <div class="tables-grid">
+            <div class="table-card">
+                <h3>Cross-Report IOC Correlation</h3>
+                <table>
+                    <thead><tr><th>Indicator</th><th>Type</th><th>Reports</th><th>Confidence</th></tr></thead>
+                    <tbody><tr><td class="ioc-cell"><code>node.js</code></td><td>DOMAINS</td><td class="count-cell">4</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>cmd.exe</code></td><td>DOMAINS</td><td class="count-cell">3</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>next.js</code></td><td>DOMAINS</td><td class="count-cell">3</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>node.exe</code></td><td>DOMAINS</td><td class="count-cell">3</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>system.net</code></td><td>DOMAINS</td><td class="count-cell">3</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>cve-2025-55182</code></td><td>CVES</td><td class="count-cell">2</td><td><span class="conf-badge conf-high">HIGH</span></td></tr><tr><td class="ioc-cell"><code>cve-2025-66478</code></td><td>CVES</td><td class="count-cell">2</td><td><span class="conf-badge conf-high">HIGH</span></td></tr><tr><td class="ioc-cell"><code>7f05bad031d22c2bb4352bf0b6b9ee2ca064a4c0e11a317e6fedc69...</code></td><td>SHA256</td><td class="count-cell">2</td><td><span class="conf-badge conf-high">HIGH</span></td></tr><tr><td class="ioc-cell"><code>http://193.34.213.150/nuts/bolts</code></td><td>URLS</td><td class="count-cell">2</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>http://45.32.158.54/5e51aff54626ef7f/x86_64</code></td><td>URLS</td><td class="count-cell">2</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>http://superminecraft.net.br:3000/sex.sh</code></td><td>URLS</td><td class="count-cell">2</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>bun.exe</code></td><td>DOMAINS</td><td class="count-cell">2</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>check.sh</code></td><td>DOMAINS</td><td class="count-cell">2</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>d5.sh</code></td><td>DOMAINS</td><td class="count-cell">2</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr><tr><td class="ioc-cell"><code>keep.camdvr</code></td><td>DOMAINS</td><td class="count-cell">2</td><td><span class="conf-badge conf-medium">MEDIUM</span></td></tr></tbody>
+                </table>
+            </div>
+            <div class="table-card">
+                <h3>Recent Intelligence Reports</h3>
+                <table>
+                    <thead><tr><th>Report</th><th>Date</th><th>Sources</th><th>IOCs</th></tr></thead>
+                    <tbody><tr><td class="title-cell">Shai-Hulud 2.0: Guidance for detecting, ...</td><td>2026-01-06</td><td class="count-cell">1</td><td class="count-cell">16</td></tr><tr><td class="title-cell">CISA-PDF Reports & Links</td><td>2026-01-06</td><td class="count-cell">5</td><td class="count-cell">418</td></tr><tr><td class="title-cell">Multiple Threat Actors Exploit React2She...</td><td>2026-01-06</td><td class="count-cell">4</td><td class="count-cell">190</td></tr><tr><td class="title-cell">Unit42 Blogs</td><td>2026-01-06</td><td class="count-cell">5</td><td class="count-cell">159</td></tr><tr><td class="title-cell">Stealth in Layers: Unmasking the Loader ...</td><td>2026-01-08</td><td class="count-cell">1</td><td class="count-cell">32</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <footer>PEAK CTI v3.2.0 | <a href="https://github.com/apps-dfir/Security-Operations">Repository</a></footer>
+    </div>
+    
+    <script>
+        Chart.defaults.color = '#71717a';
+        Chart.defaults.borderColor = '#27272a';
+        Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif";
+        
+        const slateColors = ['#475569', '#64748b', '#94a3b8', '#334155', '#1e293b', '#0f172a', '#cbd5e1', '#e2e8f0'];
+        
+        // Timeline
+        new Chart(document.getElementById('timelineChart'), {
+            type: 'bar',
+            data: {
+                labels: ["2026-01"],
+                datasets: [{ data: [5], backgroundColor: '#475569', borderRadius: 3 }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { grid: { display: false } },
+                    y: { beginAtZero: true, ticks: { stepSize: 1 } }
+                }
+            }
+        });
+        
+        // IOC Distribution
+        new Chart(document.getElementById('iocChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ["CVEs", "URLs", "Domains", "IPv4", "SHA256", "MD5", "SHA1", "WINDOWS_PATHS"],
+                datasets: [{ data: [17, 94, 450, 116, 106, 5, 19, 8], backgroundColor: slateColors.slice(0, 8), borderWidth: 0 }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '60%',
+                plugins: { legend: { position: 'right', labels: { boxWidth: 12, padding: 12 } } }
+            }
+        });
+        
+        // Confidence
+        new Chart(document.getElementById('confChart'), {
+            type: 'bar',
+            data: {
+                labels: [''],
+                datasets: [
+                    { label: 'HIGH', data: [126], backgroundColor: '#475569' },
+                    { label: 'MEDIUM', data: [655], backgroundColor: '#64748b' },
+                    { label: 'LOW', data: [0], backgroundColor: '#94a3b8' }
+                ]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, padding: 16 } } },
+                scales: {
+                    x: { stacked: true, grid: { display: false } },
+                    y: { stacked: true, display: false }
+                }
+            }
+        });
+        
+        // MITRE
+        const mitreLabels = ["T1036: Masquerading", "T1059.001: Command and Scriptin...", "T1059.007: Command and Scriptin...", "T1204.002: User Execution", "T1589.001: Credentials", "T1592.002: Software", "T1027.015: Compression", "T1085: Rundll32"];
+        const mitreCounts = [4, 4, 4, 4, 4, 4, 3, 3];
+        new Chart(document.getElementById('mitreChart'), {
+            type: 'bar',
+            data: {
+                labels: mitreLabels,
+                datasets: [{ data: mitreCounts, backgroundColor: '#475569', borderRadius: 2 }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { display: false } },
+                    y: { grid: { display: false } }
+                }
+            }
+        });
+        
+        // Actors
+        const actorEl = document.getElementById('actorChart');
+        if (actorEl) {
+            const actorLabels = ["INC", "Hive", "Conti", "Jolly Scorpius", "RansomHouse", "CVE-2025-55182", "Turla", "APT28", "Fancy Bear", "Forest Blizzard"];
+            const actorCounts = [5, 2, 2, 1, 1, 1, 1, 1, 1, 1];
+            new Chart(actorEl, {
+                type: 'bar',
+                data: {
+                    labels: actorLabels,
+                    datasets: [{ data: actorCounts, backgroundColor: '#475569', borderRadius: 2 }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { display: false } },
+                        y: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

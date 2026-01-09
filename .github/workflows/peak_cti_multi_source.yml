@@ -90,13 +90,19 @@ jobs:
             const ocrMatch = body.match(/### Enable OCR\s*\n+([^\n#]+)/i);
             const enableOcr = ocrMatch ? ocrMatch[1].trim().toLowerCase() : 'no';
             
+            // Extract LLM MITRE Validation setting
+            const llmMatch = body.match(/### LLM MITRE Validation\s*\n+([^\n#]+)/i);
+            const enableLlm = llmMatch ? llmMatch[1].trim().toLowerCase() : 'no';
+            
             console.log('Sources:', sources);
             console.log('Analyst:', analyst);
             console.log('OCR:', enableOcr);
+            console.log('LLM MITRE:', enableLlm);
             
             core.setOutput('sources', JSON.stringify(sources));
             core.setOutput('analyst', analyst);
             core.setOutput('enable_ocr', enableOcr === 'yes' || enableOcr === 'true' ? 'true' : 'false');
+            core.setOutput('enable_llm_mitre', enableLlm === 'yes' || enableLlm === 'true' ? 'true' : 'false');
             core.setOutput('source_count', sources.length.toString());
 
       - name: Validate Sources
@@ -207,6 +213,8 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
           REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          PEAK_ENABLE_LLM_VALIDATION: ${{ steps.parse.outputs.enable_llm_mitre }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           cd peak/cti
           
@@ -313,6 +321,7 @@ jobs:
             **Analyst:** ${{ steps.parse.outputs.analyst }}
             **Sources Processed:** ${{ steps.dedup.outputs.new_count }}
             **OCR Enabled:** ${{ steps.parse.outputs.enable_ocr }}
+            **LLM MITRE Validation:** ${{ steps.parse.outputs.enable_llm_mitre }}
             
             ### Generated Files
             - Report: `${{ steps.generate.outputs.report_path }}`
@@ -323,6 +332,7 @@ jobs:
             ### Review Checklist
             - [ ] Verify IOC extractions
             - [ ] Verify MITRE technique extractions
+            - [ ] Review MITRE extraction warnings (if any)
             - [ ] Review confidence scores
             - [ ] Add analyst notes if needed
             

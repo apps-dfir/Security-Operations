@@ -40,3 +40,13 @@ body:
         - "no"
         - "yes"
       default: 0
+
+  - type: dropdown
+    id: llm_mitre
+    attributes:
+      label: LLM MITRE Validation
+      description: Use Claude to validate technique context and suggest missing TTPs (uses API credits, personal repo only)
+      options:
+        - "no"
+        - "yes"
+      default: 0
